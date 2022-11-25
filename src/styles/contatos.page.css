@@ -1,0 +1,232 @@
+.p_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px 0;
+    padding: 0 30px;
+}
+
+.search_container{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin: 150px auto 0;
+    gap: 0 35px;
+}
+
+/* input de busca */
+.search_container :nth-child(1){
+    display: flex;
+    width: 100%;
+}
+
+/* botões Todos e Novo */
+.search_container :nth-child(2){
+    display: flex;
+    gap: 16px;
+}
+
+.search_container a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search_container input{
+    width: 100%;
+    height: 45px;
+    border-radius: 12px 0 0 12px;
+    border: none;
+    color: #fff;
+    background-color: rgb(233, 233, 233);
+    background-color: #535068;
+    outline: none;
+    padding: 16px;
+    font-size: 1.6rem;
+}
+
+.search_container .btn-busca{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    font-size: 16px;
+   /*  background-color: #302F3D; */
+    background-color: #8502D1;
+    color: #fff
+}
+
+.search_container .btn-todos,
+.search_container .btn-novo{
+    width: 80px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search_container .btn-todos{
+    background-color: #8502D1;
+    border: 1px solid #8502D1;
+}
+
+.search_container .btn-todos:hover{
+    background-color: #7903bd;
+    border: 1px solid #7903bd;
+}
+
+.search_container .btn-novo{
+    background-color: #38aa12;
+    border: 1px solid #38aa12;
+}
+
+.search_container .btn-novo:hover{
+    background-color: #289105;
+    border: 1px solid #289105;
+}
+
+
+#btn__criar{
+    font-size: 1.6rem;
+    color: black;
+    cursor: pointer;
+}
+
+
+.contacts__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+    width: 100%;
+    margin-bottom: 80px;
+
+}
+
+.contacts__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e3c4f;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    padding: 20px 30px;
+    color: #D3CED8; 
+}
+
+.contacts__card :nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.contacts__img{
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__img img{
+    background-color: aliceblue;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+}
+
+.contacts__data{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__data p{
+    font-size: 2rem;
+    /* color: #D3CED8; */
+    color: #877dc0;
+ 
+} 
+
+.contacts__data span{
+    font-size: 1.6rem;
+}
+
+.contacts__data div{
+    display: flex;
+    gap: 0 12px;
+}
+
+.contacts__options{
+    display: flex;
+    gap: 10px;
+}
+
+
+.contacts__options button{
+    background-color: #302F3D;
+    border: none;
+    color: #D3CED8;
+    font-size: 1.8rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-button:hover{
+    color: #9f15ef;
+}
+
+.edit-button:hover{
+    color: #40c713;
+}
+
+@media screen and (max-width: 768px) {
+  
+    .search_container{
+        width: 100%;
+        flex-direction: column;
+        margin: 90px auto 0;
+        gap: 35px;
+    }
+
+    .contacts__data div{
+        flex-wrap: wrap;
+    }
+
+    .search_container :nth-child(2){
+        justify-content: center;
+    }
+
+    .contacts__options{
+        flex-direction: column;
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+
+    .contacts__card {
+        flex-direction: column;
+    }
+    .contacts__card :nth-child(1){
+        flex-direction: column;
+    }
+    .contacts__options{
+        flex-direction: row;
+        margin-top: 10px;
+    }
+  }
